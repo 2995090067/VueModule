@@ -1,0 +1,38 @@
+，把本地仓库和远程仓库链接一起    从本地上传至GitHub空间
+
+// 在项目文件夹内执行以下命令
+	1.git init //初始化一个本地仓库
+	
+	2.git add ./ //将所有文件添加至本地仓库的门口
+	
+	3.git commit -m "上传备注信息"
+	
+	4.git remote add origin 你的空间git链接
+	
+	5.git push -u origin master 
+————————————————
+版权声明：本文为CSDN博主「zy」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_40088255/article/details/106412075
+git pull --rebase origin master
+
+git push origin master
+
+
+
+http://idea.medeming.com/jihuoma/
+
+
+git push -f 异常处理
+
+
+
+
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/2995090067/Blogs2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+所以我就重新git add .-->git status-->git commit -m ---->git push origin master 终于成功

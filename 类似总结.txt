@@ -1,0 +1,66 @@
+Administrator@WIN10-2019MKHMZ MINGW64 ~/Desktop/vue/vueblogs/git指令
+$ git init
+Initialized empty Git repository in C:/Users/Administrator/Desktop/vue/vueblogs/git指令/.git/
+
+Administrator@WIN10-2019MKHMZ MINGW64 ~/Desktop/vue/vueblogs/git指令 (master)
+$ git add .
+
+Administrator@WIN10-2019MKHMZ MINGW64 ~/Desktop/vue/vueblogs/git指令 (master)
+$ git commit -m '自己的东西'
+[master (root-commit) 055f0ab] 自己的东西
+ 1 file changed, 38 insertions(+)
+ create mode 100644 "git\346\214\207\344\273\244.txt"
+
+Administrator@WIN10-2019MKHMZ MINGW64 ~/Desktop/vue/vueblogs/git指令 (master)
+$ git remote add origin https://github.com/2995090067/myblogs.git
+
+Administrator@WIN10-2019MKHMZ MINGW64 ~/Desktop/vue/vueblogs/git指令 (master)
+$ git pull --rebase origin master
+warning: no common commits
+remote: Enumerating objects: 163, done.
+remote: Counting objects: 100% (163/163), done.
+remote: Compressing objects: 100% (60/60), done.
+remote: Total 163 (delta 85), reused 158 (delta 83), pack-reused 0
+Receiving objects: 100% (163/163), 75.59 KiB | 14.00 KiB/s, done.
+Resolving deltas: 100% (85/85), done.
+From https://github.com/2995090067/myblogs
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+First, rewinding head to replay your work on top of it...
+Applying: 自己的东西
+
+Administrator@WIN10-2019MKHMZ MINGW64 ~/Desktop/vue/vueblogs/git指令 (master)
+$ git push https://github.com/2995090067/myblogs.git
+fatal: HttpRequestException encountered.
+   ?????????????
+Username for 'https://github.com': 2995090067@qq.com
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.06 KiB | 360.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/2995090067/myblogs.git
+   c73f554..beee2fc  master -> master
+
+Administrator@WIN10-2019MKHMZ MINGW64 ~/Desktop/vue/vueblogs/git指令 (master)
+$ git add .
+
+Administrator@WIN10-2019MKHMZ MINGW64 ~/Desktop/vue/vueblogs/git指令 (master)
+$ git commit -m '修改'
+[master 011c3ce] 修改
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Administrator@WIN10-2019MKHMZ MINGW64 ~/Desktop/vue/vueblogs/git指令 (master)
+$ git push https://github.com/2995090067/myblogs.git
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 288 bytes | 288.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/2995090067/myblogs.git
+   beee2fc..011c3ce  master -> master
+
