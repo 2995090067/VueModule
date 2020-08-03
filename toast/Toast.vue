@@ -51,7 +51,8 @@
   }
 </script>
 
-<style scoped>
+
+<style>
   .toast {
     position: fixed;
     top: 50%;
@@ -59,27 +60,27 @@
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 9999;
-  .main {
-    display: inline-block;
-    padding: 0.2rem 0.4rem;
-    min-width: 2.6rem;
-    max-width: 4.4rem;
-    border-radius: .04rem;
-    background-color: rgba(66, 63, 56, 0.8);
-  .icon-box {
-    margin: 0 auto .1rem;
-    width: .7rem;
-    height: .7rem;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #fff;
-  }
-  .text {
-    font-size: 0.3rem;
-    line-height: .45rem;
-    color: #fff;
-  }
-  }
+    .main {
+      display: inline-block;
+      padding: 0.2rem 0.4rem;
+      min-width: 2.6rem;
+      max-width: 4.4rem;
+      border-radius: .04rem;
+      background-color: rgba(66, 63, 56, 0.8);
+      .icon-box {
+        margin: 0 auto .1rem;
+        width: .7rem;
+        height: .7rem;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #fff;
+      }
+      .text {
+        font-size: 0.3rem;
+        line-height: .45rem;
+        color: #fff;
+      }
+    }
   }
 
   .slide-fade-enter-active {
