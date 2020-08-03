@@ -1,0 +1,13 @@
+文件目录
+toast
+--Toast.vue
+--index.js 
+ 
+//插件用法:
+import  Toast from "toast/index.js";
+//text 要显示的文字  time显示的毫秒数,type是是否显示图标
+toast({text:"要显示的文字",time:1000})
+  .then(()=>{
+    console.log("关闭后执行");
+  })
+  .catch(()=>{})
